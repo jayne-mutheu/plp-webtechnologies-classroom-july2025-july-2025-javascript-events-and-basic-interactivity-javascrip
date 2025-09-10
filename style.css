@@ -1,0 +1,139 @@
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #fefefe;
+  color: #222;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+button {
+  cursor: pointer;
+  padding: 8px 12px;
+  font-size: 1rem;
+}
+
+#theme-toggle {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+#theme-toggle:hover {
+  background-color: #0056b3;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #eee;
+}
+
+body.dark-mode button#theme-toggle {
+  background-color: #bb86fc;
+  color: #121212;
+}
+
+body.dark-mode button#theme-toggle:hover {
+  background-color: #9a67ea;
+}
+
+/* FAQ styles */
+#faq-section {
+  max-width: 600px;
+  margin-bottom: 40px;
+}
+
+.faq-item {
+  margin-bottom: 10px;
+}
+
+.faq-question {
+  width: 100%;
+  text-align: left;
+  background-color: #eee;
+  border: none;
+  padding: 10px;
+  font-size: 1.1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.faq-question:hover {
+  background-color: #ddd;
+}
+
+.faq-answer {
+  display: none;
+  padding: 10px;
+  background-color: #fafafa;
+  border-left: 3px solid #007bff;
+  margin-top: 4px;
+  border-radius: 0 4px 4px 4px;
+}
+
+/* Show answer when active */
+.faq-item.active .faq-answer {
+  display: block;
+}
+
+/* Form styles */
+#form-section {
+  max-width: 400px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.error-message {
+  color: #d93025;
+  font-size: 0.85rem;
+  position: absolute;
+  bottom: -18px;
+  left: 0;
+  display: none;
+}
+
+input.invalid {
+  border-color: #d93025;
+}
+
+#form-feedback {
+  margin-top: 15px;
+  font-weight: bold;
+  color: green;
+}

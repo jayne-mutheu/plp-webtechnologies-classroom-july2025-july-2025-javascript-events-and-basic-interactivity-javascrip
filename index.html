@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Interactive Web Page with JavaScript</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Interactive Web Page Demo</h1>
+    <button id="theme-toggle">Toggle Light/Dark Mode</button>
+  </header>
+
+  <main>
+    <section id="faq-section">
+      <h2>FAQ - Click to Expand</h2>
+      <div class="faq-item">
+        <button class="faq-question">What is this page about?</button>
+        <div class="faq-answer">This page demonstrates JavaScript interactivity and form validation.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">How does the form validation work?</button>
+        <div class="faq-answer">It checks inputs on submit and shows helpful error messages.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Can I toggle light/dark mode?</button>
+        <div class="faq-answer">Yes! Use the button at the top to switch themes.</div>
+      </div>
+    </section>
+
+    <section id="form-section">
+      <h2>Sign Up Form</h2>
+      <form id="signup-form" novalidate>
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" />
+          <small class="error-message"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" />
+          <small class="error-message"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" />
+          <small class="error-message"></small>
+        </div>
+
+        <button type="submit">Submit</button>
+        <div id="form-feedback"></div>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
